@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motos KTM - Pàgina Principal</title>
+    <style>
+        /* Variables CSS per a colors i fonts */
+        :root {
+            --primary-color: #ff6600;
+            --secondary-color: #333333;
+            --accent-color: #ff9900;
+            --light-color: #f5f5f5;
+            --dark-color: #1a1a1a;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Reset i estils generals */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-main);
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            line-height: 1.6;
+        }
+        
+        /* Capçalera */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Contingut principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        /* Estils per a les imatges */
+        .image-container {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .image-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .image-container:hover img {
+            transform: scale(1.03);
+        }
+        
+        /* Estils per als enllaços */
+        .nav-link {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(255, 102, 0, 0.3);
+            margin-top: 1rem;
+        }
+        
+        .nav-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255, 102, 0, 0.5);
+            background: linear-gradient(to right, var(--accent-color), var(--primary-color));
+        }
+        
+        /* Peu de pàgina */
+        footer {
+            background-color: var(--secondary-color);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-top: 2px solid var(--primary-color);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .image-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Motos KTM</h1>
+    </header>
+    
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="image-container">
+                <img src="ktm.jpg" alt="KTM moto de carretera">
+            </div>
+            
+            
+            <a href="pagina2.html" class="nav-link">Veure KTM de motocròs</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Motos KTM - Tots els drets reservats</p>
+    </footer>
+</body>
+</html>
